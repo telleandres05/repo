@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4a710;
+    align-items: center;
+    height: 20vh;
+    flex-wrap: wrap;
+
+}
+
+header .logo img {
+    width: 15vh;
+}
+
+header .navbar {
+    padding-bottom: 5px;
+}
+
+header .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+header .navbar ul li {
+    font-size: 1rem;
+
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    background-color: #d7d8d8;
+}
+
+#index {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#index .texto {
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+}
+
+#index .texto h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#index div img {
+    width: 100%;
+    height: 61vh;
+}
+
+footer {
+    height: 5vh;
+    background-color: #f4a710;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* css a cartas */
+
+#cartas {
+    background-color: #d7d8d8;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+#cartas .cartas {
+    padding: 10px 5px;
+}
+
+#cartas .cartas h1 {
+    text-align: center;
+}
+
+#cartas .ulCartas ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    list-style: none;
+    justify-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#cartas .ulCartas ul li a {
+    text-decoration: none;
+    color: black
+}
+
+#cartas .grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#cartas .grupo .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#cartas .grupo .img img {
+    width: 100%;
+}
+
+#cartas .grupo .img p {
+    text-align: center;
+}
+#cartas .grupo .img p {
+    text-align: center;
+    padding-right: 10px;
+}
+#cartas .grupo .img .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#cartas .grupo .img .botton{
+display: flex;
+flex-direction: column;
+}
+#cartas .grupo .img .botton1 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #f4a710;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+#cartas .grupo .img .botton1 a,
+#cartas .grupo .img .botton2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#cartas .grupo .img .botton2 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #FCFB44;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+/* css a clothing */
+
+#ropa {
+    background-color: #d7d8d8;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+#ropa .ropa {
+    padding: 10px 5px;
+}
+
+#ropa .ropa h1 {
+    text-align: center;
+}
+
+#ropa .ulRopa ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    justify-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#ropa .ulRopa ul li a {
+    text-decoration: none;
+    color: black
+}
+
+#ropa .grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    /* gap: 20px; */
+    padding-bottom: 10px;
+}
+
+#ropa .grupo .img {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}
+
+#ropa .grupo .img img {
+    width: 100%;
+}
+
+#ropa .grupo .img p {
+    text-align: center;
+    padding-right: 10px;
+}
+#ropa .grupo .img .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#ropa .grupo .img .botton{
+display: flex;
+flex-direction: column;
+}
+#ropa .grupo .img .botton1 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #f4a710;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+#ropa .grupo .img .botton1 a,
+#ropa .grupo .img .botton2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#ropa .grupo .img .botton2 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #FCFB44;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+/* css a accesorio */
+
+#acc {
+    background-color: #d7d8d8;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+#acc .accesorio {
+    padding: 10px 5px;
+}
+
+#acc .accesorio h1 {
+    text-align: center;
+}
+
+#acc .ulAcc ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    justify-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#acc .ulAcc ul li a {
+    text-decoration: none;
+    color: black
+}
+
+/* css a contacto */
+
+.titulo {
+    background-color: #d7d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+
+#redes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    ;
+}
+
+#redes .texto{
+    grid-column:  span 2;
+    font-size: 20px;
+}
+
+#redes .telegram{
+    grid-column: span 2;
+}
+
+#redes .facebook img{
+    width: 30px;
+}
+
+#redes .whatsapp img{
+    width: 30px;}
+#redes .instagram img{
+    width: 30px;}
+#redes .telegram img{
+    width: 30px;}
+
+#redes .tiktok img{
+    width: 30px;}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.map .texto{
+    font-size: 20px;
+}
+
+
+
+/* estilo desktop para el index */
+
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 1rem;
+    }
+
+    #index {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #index .texto {
+        align-content: center;
+    }
+
+    #index .texto h1 {
+        font-size: 4rem;
+    }
+
+    #index .texto h1 span {
+        display: block;
+    }
+
+    #index div img {
+        width: 100%;
+        height: 75vh;
+    }
+
+}
+
+/* estilo desktop para cartas */
+
+@media screen and (min-width: 1024px) {
+    #cartas {
+        gap: 25px;
+    }
+
+    #cartas .ulCartas {
+        display: none;
+    }
+
+    #cartas .grupo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #cartas .grupo .cartas {
+        text-align: center;
+        align-content: center;
+    }
+
+    #cartas .grupo .img {
+        align-items: center;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* estilo desktop para clothing */
+
+@media screen and (min-width: 1024px) {
+    #ropa {
+        gap: 25px;
+    }
+
+    #ropa .ulRopa {
+        display: none;
+    }
+
+    #ropa .grupo {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    #ropa .grupo .nombre {
+        text-align: center;
+        align-content: center;
+    }
+
+    #ropa .grupo .img {
+        align-items: center;
+        font-size: 1.5rem;
+
+    }
+
+    #ropa .grupo .img img{
+        width: 50vh;
+    
+    }
+}
+
+/* estilo desktop para contactos */
+
+@media screen and (min-width: 1024px) {
+    .titulo{
+        justify-items: center;
+    
+    }
+    .grupo {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+            }
+    .grupo #redes{
+        flex: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+    }
+    .grupo #redes .whatsapp{
+        grid-column: span 2;
+    }
+    
+    .grupo #redes .telegram{
+        grid-column: span 1;
+    }
+
+    .grupo .map{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        padding-top: 10px;
+    }
+
+    .grupo .map .texto{
+        grid-column: span 2;
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .grupo .map .ubicacion{
+        grid-column: span 2;
+    
+    }
+}
+
