@@ -15,17 +15,27 @@ header {
     flex-direction: column;
     background-color: #f4a710;
     align-items: center;
-    height: 20vh;
+    height: 22vh;
     flex-wrap: wrap;
 
 }
 
 header .logo img {
-    width: 15vh;
+    width: 120px;
+    height: 120px;
+
+
 }
 
 header .navbar {
     padding-bottom: 5px;
+}
+
+header .navbar .colorFondo{
+    background-color: #d7d8d8;
+    text-align: center;
+    border: black solid;
+    border-radius: 8px;
 }
 
 header .navbar ul {
@@ -35,8 +45,9 @@ header .navbar ul {
     justify-content: center;
 }
 
+
 header .navbar ul li {
-    font-size: 1rem;
+    font-size: 1.5rem;
 
 }
 
@@ -50,7 +61,7 @@ main{
 }
 
 #index {
-    height: 75vh;
+    height: 73vh;
     display: flex;
     flex-direction: column;
 }
@@ -58,7 +69,7 @@ main{
 #index .texto {
     align-items: center;
     justify-items: center;
-    padding: 5px;
+    padding-top: 5px;
 }
 
 #index .texto h1 {
@@ -68,7 +79,7 @@ main{
 
 #index div img {
     width: 100%;
-    height: 61vh;
+    height: 60vh;
 }
 
 footer {
@@ -76,6 +87,7 @@ footer {
     background-color: #f4a710;
     text-align: center;
     padding-top: 5px;
+    font-size: 12px;
 }
 
 /* css a cartas */
@@ -116,7 +128,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-right: 20px;
-    gap: 20px;
+    gap: 30px;
     padding-bottom: 10px;
 }
 
@@ -124,10 +136,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    gap: 20px;
 }
 
 #cartas .grupo .img img {
     width: 100%;
+    height: 100%;
 }
 
 #cartas .grupo .img p {
@@ -220,7 +234,6 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
     padding-right: 20px;
-    /* gap: 20px; */
     padding-bottom: 10px;
 }
 
@@ -233,6 +246,7 @@ flex-direction: column;
 
 #ropa .grupo .img img {
     width: 100%;
+    height: 100%;
 }
 
 #ropa .grupo .img p {
@@ -317,6 +331,83 @@ flex-direction: column;
     color: black
 }
 
+#acc .nombre {
+    text-align: center;
+}
+#acc .grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#acc .grupo .img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#acc .grupo .img img {
+    width: 150px;
+    height: 200px;
+}
+
+#acc .grupo .img p {
+    text-align: center;
+}
+#acc .grupo .img p {
+    text-align: center;
+    padding-right: 10px;
+}
+#acc .grupo .img .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#acc .grupo .img .botton{
+display: flex;
+flex-direction: column;
+}
+#acc .grupo .img .botton1 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #f4a710;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+#acc .grupo .img .botton1 a,
+#acc .grupo .img .botton2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#acc .grupo .img .botton2 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #FCFB44;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+
 /* css a contacto */
 
 .titulo {
@@ -339,7 +430,10 @@ flex-direction: column;
     padding-bottom: 10px;
     ;
 }
-
+.grupo #redes div a{
+    text-decoration: none;
+    color: black;
+}
 #redes .texto{
     grid-column:  span 2;
     font-size: 20px;
@@ -387,6 +481,11 @@ flex-direction: column;
         padding-right: 1rem;
     }
 
+    header .navbar .colorFondo{
+        background-color: #f4a710;
+        text-align: center;
+        border: none;
+    }
     #index {
         flex-direction: row;
         justify-content: space-around;
@@ -406,7 +505,7 @@ flex-direction: column;
 
     #index div img {
         width: 100%;
-        height: 75vh;
+        height: 100%;
     }
 
 }
@@ -436,7 +535,12 @@ flex-direction: column;
 
     #cartas .grupo .img {
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    #cartas .grupo .img img{
+        width: 35vh;
+        width: 35vh;
     }
 }
 
@@ -470,6 +574,53 @@ flex-direction: column;
 
     #ropa .grupo .img img{
         width: 50vh;
+    
+    }
+}
+
+/* estilo desktop para accesorios */
+
+@media screen and (min-width: 1024px) {
+    #acc {
+        gap: 25px;
+    }
+
+    #acc .ulAcc {
+        display: none;
+    }
+    
+    #acc #naruto , #acc #dbz{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #acc #naruto .grupo , #acc #dbz .grupo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #acc #naruto .grupo .img , #acc #dbz .grupo .img{
+        display: flex;
+        flex-direction: column;
+        }
+
+    #acc .grupo .nombre {
+        text-align: center;
+        align-content: center;
+    }
+
+    #acc .grupo .img {
+        align-items: center;
+        font-size: 1.5rem;
+
+    }
+
+    #acc .grupo .img img{
+        width: 30vh;
+        height: 30vh;
     
     }
 }
