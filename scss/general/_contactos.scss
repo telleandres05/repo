@@ -1,0 +1,114 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+/*estilos de contactos*/
+
+.titulo{
+    @include flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    }
+
+.grupo #redes{
+    @include grid (grid, repeat(2, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.grupo #redes div a{
+    text-decoration: none;
+    color: black;
+    }
+
+.grupo #redes .texto{
+    grid-column: span 2;
+    font-size: 20px;
+}
+
+.grupo #redes div img{
+    width: 30px;
+}
+
+.grupo #redes .telegram{
+    grid-column: span 2;
+}
+
+.grupo .map{
+    @include flex;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.grupo .map .texto{
+    font-size: 20px;
+}
+
+//mq contactos para tablet
+
+@media screen and (min-width: 760px){
+    .contactos {
+        height: 73vh;
+    }
+
+    .grupo .map{
+        height: 100%;
+        width: 100%;
+    }
+    .grupo .map .ubicacion{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+//mq de contatos desktop
+
+@media screen and (min-width: 1024px){
+    .titulo{
+        justify-items: center;
+    }
+
+    .grupo{
+        @include flex;
+        padding-bottom: 10px;
+    }
+
+    .grupo #redes{
+        @include grid (grid, repeat(2, 1fr));
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    .grupo #redes div a{
+        font-size: $fontSM;
+    }
+
+    .grupo #redes .whatsapp{
+        grid-column: span 2;
+    }
+
+    .grupo #redes .telegram{
+        grid-column: span 1;
+    }
+
+    .grupo .map{
+        @include grid (grid, repeat(2, 1fr));
+        grid-template-rows: 1fr;
+        padding-top: 10px;
+    }
+
+    .grupo .map .texto{
+        grid-column: span 2;
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .grupo .map .ubicacion{
+        grid-column: span 2;
+    }
+}

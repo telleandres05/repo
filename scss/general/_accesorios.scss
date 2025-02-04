@@ -1,0 +1,237 @@
+// import mixin
+@import "../utilidades/mixin";
+
+/*estilos de accesorios movil*/
+
+#acc{
+    background-color: $colorBody;
+    @include flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+#acc .accesorio{
+    padding: 10px 5px;
+}
+
+#acc .accesorio h1{
+    text-align: center;
+}
+
+#acc .ulAcc ul{
+    @include grid (grid , repeat(2, 1fr));
+    list-style: none;
+    justify-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#acc .ulAcc ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*estilos de naruto*/
+
+#acc #naruto .nombre{
+    text-align: center;
+}
+
+#acc #naruto .grupo{
+    @include flex;
+    align-items: center;
+    padding-right: 20px;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#acc #naruto .grupo .img{
+    @include grid (grid, (1fr 1fr));
+    justify-items: center;
+}
+
+#acc #naruto .grupo .img img{
+    width: 150px;
+    height: 200px;
+}
+
+#acc #naruto .grupo .img .desc{
+    @include flex;
+    justify-content: center;
+}
+
+#acc #naruto .grupo .img .desc p{
+    text-align: center;
+    padding-right: 10px;
+}
+
+#acc #naruto .grupo .img .botton{
+    @include flex;
+}
+
+#acc #naruto .grupo .img .botton .botton1{
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: $colorHF;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+#acc #naruto .grupo .img .botton .botton1 a, #acc #naruto .grupo .img .botton2 a{
+    text-decoration: none;
+    color: black;
+}
+
+#acc #naruto .grupo .img .botton2 {
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: $casheaC;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+/*estilos para dbz*/
+
+#acc #dbz .nombre{
+    text-align: center;
+}
+
+#acc #dbz .grupo{
+    @include flex;
+    align-items: center;
+    padding-right: 20px;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#acc #dbz .grupo .img{
+    @include grid (grid, (1fr 1fr));
+    justify-items: center;
+}
+
+#acc #dbz .grupo .img img{
+    width: 150px;
+    height: 200px;
+}
+
+#acc #dbz .grupo .img .desc{
+    @include flex;
+    justify-content: center;
+}
+
+#acc #dbz .grupo .img .desc p{
+    text-align: center;
+    padding-right: 10px;
+}
+
+#acc #dbz .grupo .img .botton{
+    @include flex;
+}
+
+#acc #dbz .grupo .img .botton .botton1{
+@include carrito;
+
+}
+
+#acc #dbz .grupo .img .botton .botton1 a, #acc #dbz .grupo .img .botton2 a{
+    text-decoration: none;
+    color: black;
+}
+
+#acc #dbz .grupo .img .botton2 {
+    @include cashea;
+}
+
+// estilo accesorio tablet
+
+/*mq accesorio tablet*/
+
+@media screen and (min-width: 760px){
+    #acc{
+        // width: 100%;
+    }
+
+    #acc #naruto , #acc #dbz{
+        @include flex;
+        text-align: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    #acc #naruto .grupo, #acc #dbz .grupo{
+        display: flex;
+        flex-direction: row;
+        }
+
+    #acc #naruto .grupo .img, #acc #dbz .grupo .img{
+        @include flex;
+        align-items: center;
+        font-size: $fontSM;
+    }
+
+    #acc #naruto .grupo .img img, #acc #dbz .grupo .img img{
+        width: 30vw;
+        height: 30vh;
+    }
+
+    #acc #naruto .grupo .nombre, #acc #dbz .grupo .nombre{
+        text-align: center;
+        align-content: center;
+    }
+}
+
+/*estilo accesorio desktop*/
+
+@media screen and (min-width: 1024px) {
+    #acc{
+        gap:25px;
+    }
+
+    #acc .ulAcc {
+        display: none;
+    }
+
+    #acc #naruto , #acc #dbz{
+        @include flex;
+        text-align: center;
+    }
+
+    #acc #naruto .grupo, #acc #dbz .grupo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #acc #naruto .grupo .img, #acc #dbz .grupo .img{
+        @include flex;
+        align-items: center;
+        font-size: $fontSM;
+    }
+
+    #acc #naruto .grupo .img img, #acc #dbz .grupo .img img{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    #acc #naruto .grupo .nombre, #acc #dbz .grupo .nombre{
+        text-align: center;
+        align-content: center;
+    }
+}

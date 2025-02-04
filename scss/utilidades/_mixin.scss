@@ -1,0 +1,46 @@
+// mixin sin parametros
+@mixin grid ($grid, $column) {
+    display: $grid;
+    grid-template-columns: $column;
+}
+
+
+//mixin con parametros
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+}
+
+//mixin con parametros Boton Carrito
+@mixin carrito {    
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: $fontB;
+    border-radius: 8px;
+    background-color: $carritoC;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+//mixin con parametros boton Cashea 
+@mixin cashea{
+    display: inline-block;
+    justify-items: center;
+    padding: 5px;
+    font-size: $fontB;
+    border-radius: 8px;
+    background-color: $casheaC;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+

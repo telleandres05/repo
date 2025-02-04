@@ -1,0 +1,48 @@
+// import mixin
+@import "../utilidades/mixin";
+
+#index {
+    height: 73vh;
+    @include flex;
+}
+
+#index .texto{
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#index .texto h1{
+    font-size: $fontSM;
+    text-align: center;
+}
+
+#index .img img{
+    width: 100%;
+    height: 60vh;
+}
+
+//mq home desktop
+@media screen and (min-width: 1024px){
+    #index{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #index .texto{
+        align-content: center;
+    }
+
+    #index .texto h1{
+        font-size: 4rem;
+    }
+
+    #index .texto h1 span{
+        display: block;
+    }
+
+    #index .img img{
+        width: 100%;
+        height: 100%;
+    }
+}
