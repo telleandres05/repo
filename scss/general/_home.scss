@@ -22,9 +22,44 @@
     height: 60vh;
 }
 
-//mq home desktop
+//mq contactos
+
+/* mq tablet*/
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    header{
+        height: 20vh;
+    }
+
+    
+    #index{
+        height: 78vh;
+    }
+
+    #index .texto{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #index .texto h1{
+        font-size: 3rem;
+    }
+
+    #index .img{
+        padding-bottom: 4rem;
+    }
+    
+    footer{
+        height: 2vh;
+    }
+}
+
+
+/* mq home desktop*/ 
+
 @media screen and (min-width: 1024px){
     #index{
+        height: 78vh;
         flex-direction: row;
         justify-content: space-around;
     }

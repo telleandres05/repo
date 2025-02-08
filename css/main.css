@@ -114,8 +114,32 @@ footer {
   height: 60vh;
 }
 
+/* mq tablet*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  header {
+    height: 20vh;
+  }
+  #index {
+    height: 78vh;
+  }
+  #index .texto {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #index .texto h1 {
+    font-size: 3rem;
+  }
+  #index .img {
+    padding-bottom: 4rem;
+  }
+  footer {
+    height: 2vh;
+  }
+}
+/* mq home desktop*/
 @media screen and (min-width: 1024px) {
   #index {
+    height: 78vh;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -359,10 +383,10 @@ footer {
   }
   #acc #naruto .grupo, #acc #dbz .grupo {
     display: flex;
+    width: 100vw;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 20px 100px 20px 100px;
   }
   #acc #naruto .grupo .img, #acc #dbz .grupo .img {
     display: flex;
@@ -484,6 +508,7 @@ footer {
   text-align: center;
 }
 
+/* mq de cartas tablet*/
 @media screen and (min-width: 760px) {
   #cartas .grupo .img {
     display: grid;
@@ -659,7 +684,12 @@ footer {
   padding-top: 15px;
 }
 
-.grupo #redes {
+.grupo p {
+  text-align: center;
+  font-size: 20px;
+}
+
+#redes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -669,17 +699,25 @@ footer {
   padding-bottom: 10px;
 }
 
-.grupo #redes div a {
+#redes div a {
   text-decoration: none;
   color: black;
 }
 
-.grupo #redes .texto {
+#redes .texto {
   grid-column: span 2;
   font-size: 20px;
 }
 
-.grupo #redes div img {
+.grupo #redes .whatsapp img {
+  width: 30px;
+}
+
+.grupo #redes .facebook img {
+  width: 30px;
+}
+
+.grupo #redes .instagram img {
   width: 30px;
 }
 
@@ -687,32 +725,57 @@ footer {
   grid-column: span 2;
 }
 
-.grupo .map {
+.grupo #redes .telegram img {
+  width: 30px;
+}
+
+.grupo #redes .tiktok img {
+  width: 30px;
+}
+
+.grupo #redes .facebook img {
+  width: 30px;
+}
+
+.map {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
   padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
-.grupo .map .texto {
+.map, texto {
   font-size: 20px;
 }
 
-@media screen and (min-width: 760px) {
+/*mq de tablet en contactos*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .contactos {
-    height: 73vh;
+    height: 80vh;
+    flex-wrap: wrap;
   }
-  .grupo .map {
+  .contactos .grupo .map {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 100%;
   }
-  .grupo .map .ubicacion {
-    height: 100%;
-    width: 100%;
+  .contactos .grupo .map .texto {
+    margin-top: 30px;
+  }
+  .contactos .grupo .map .texto p {
+    font-size: 2rem;
+  }
+  .grupo .map .ubicacion iframe {
+    height: 40vh;
+    width: 70vh;
+  }
+  footer {
+    height: 2.5vh;
   }
 }
+/*mq de desktop en contactos*/
 @media screen and (min-width: 1024px) {
   .titulo {
     justify-items: center;
@@ -722,14 +785,15 @@ footer {
     flex-direction: column;
     padding-bottom: 10px;
   }
+  .grupo p {
+    text-align: center;
+    font-size: 20px;
+  }
   .grupo #redes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat 4, 1fr;
     gap: 5px;
-  }
-  .grupo #redes div a {
-    font-size: 1.5rem;
   }
   .grupo #redes .whatsapp {
     grid-column: span 2;
