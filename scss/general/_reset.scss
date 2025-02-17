@@ -22,12 +22,16 @@ header{
     @include flex;
     background-color: $colorHF;
     align-items: center;
-    height: 22vh;
-    flex-wrap: wrap;
+    height: 130px;
+    // flex-wrap: wrap;
 }
 
 header .navbar{
     padding-bottom: 5px;}
+
+
+header nav div .logo{
+}
 
 header nav div .logo img{
     width: 120px;
@@ -56,13 +60,12 @@ main{
 }
 
 footer {
-    height: 5vh;
+    height: 30px;
     background-color: $colorHF;
     text-align: center;
     padding-top: 5px;
     font-size: $fontSF;}
-
-
+    
 //mq-header tablet
 
 /*estilos de tablet para el header*/
