@@ -124,6 +124,10 @@
     #index .newPromo .promo .promo1 .textoPromo p, #index .newPromo .promo .promo2 .textoPromo p, #index .newPromo .promo .promo3 .textoPromo p{
         font-size: 1.75rem;
     }
+
+    #index .newPromo .promo .textoPromo p span{
+        display: block;
+    }
     
 
     footer{
@@ -169,6 +173,7 @@
     }
 
     #index .newPromo{
+        width: 30vw;
         height: 100vh;
     }
 
@@ -177,14 +182,13 @@
     }
 
     #index .newPromo .promo{
-        height: 100vh;
+        height: 100%;
         padding-right: 20px;
         
     }
 
     #index .newPromo .carousel div img{
-        width: 100px;
-        height: 200px;
+        width: 50vw;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
 
@@ -199,4 +203,11 @@
         border-radius: 8px;
         
     }
+
+    #index .newPromo .promo .textoPromo p span{
+        display: inline;
+    }
+
+    #index .newPromo .promo .promo1 .carousel .carousel-inner div img, #index .newPromo .promo .promo2 .carousel .carousel-inner div img, #index .newPromo .promo .promo3 .carousel .carousel-inner div img{
+        width: 100%};
 }
