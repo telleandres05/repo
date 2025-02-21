@@ -19,6 +19,8 @@
 #index .img img{
     width: 100%;
     height: 380px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 #index .newPromo .textoPromo{
@@ -34,6 +36,9 @@
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    background-color: $colorHF;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 #index .newPromo .promo .promo1 .textoPromo p, #index .newPromo .promo .promo2 .textoPromo p, #index .newPromo .promo .promo3 .textoPromo p{
@@ -45,6 +50,7 @@
 #index .newPromo .carousel div img{
     width: 100vw;
     height: 200px;
+    border-radius: 8px;
 }
 
 #index .newPromo .carousel .carousel-inner .carousel-item{

@@ -61,16 +61,15 @@ footer {
     text-align: center;
   }
   header .navbar .container-fluid {
-    flex-direction: row;
-  }
-  header .navbar .container-fluid .navbar-toggler {
-    display: none;
+    flex-direction: column;
   }
   header .navbar .container-fluid .colorFondo {
-    display: flex;
     background-color: #f4a710;
     border: none;
     text-align: center;
+    padding: 10px;
+    border: black solid;
+    border-radius: 8px;
   }
   header .navbar .container-fluid .colorFondo ul {
     display: flex;
@@ -110,6 +109,8 @@ footer {
 #index .img img {
   width: 100%;
   height: 380px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 #index .newPromo .textoPromo {
@@ -125,6 +126,9 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 10px;
+  background-color: #f4a710;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 #index .newPromo .promo .promo1 .textoPromo p, #index .newPromo .promo .promo2 .textoPromo p, #index .newPromo .promo .promo3 .textoPromo p {
@@ -134,6 +138,7 @@ footer {
 #index .newPromo .carousel div img {
   width: 100vw;
   height: 200px;
+  border-radius: 8px;
 }
 
 #index .newPromo .carousel .carousel-inner .carousel-item {
@@ -305,7 +310,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-right: 20px;
-  gap: 20px;
+  gap: 30px;
   padding-bottom: 10px;
 }
 
@@ -316,8 +321,8 @@ footer {
 }
 
 #acc #naruto .grupo .img img {
-  width: 150px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
 }
 
 #acc #naruto .grupo .img .desc {
@@ -381,7 +386,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-right: 20px;
-  gap: 20px;
+  gap: 30px;
   padding-bottom: 10px;
 }
 
@@ -392,8 +397,8 @@ footer {
 }
 
 #acc #dbz .grupo .img img {
-  width: 150px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
 }
 
 #acc #dbz .grupo .img .desc {

@@ -80,19 +80,19 @@ footer {
     }    
 
     header .navbar .container-fluid{
-        flex-direction: row;
+        flex-direction: column;
 
     }
     
-    header .navbar .container-fluid .navbar-toggler{
-        display: none;
-    }
+
     
     header .navbar .container-fluid .colorFondo {
-        display: flex;
         background-color: $colorHF;
         border: none;
         text-align: center;
+        padding: 10px;
+        border: black solid;
+        border-radius: 8px;
     }
 
     header .navbar .container-fluid .colorFondo ul{
