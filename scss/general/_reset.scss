@@ -97,6 +97,8 @@ header .navbar .container-fluid .colorFondo ul{
     gap: 20px;
     margin: 10px auto;
     background-color: $colorHF;
+    width: 100vh;
+    justify-content: center;
 }
 
 header nav div div ul li{

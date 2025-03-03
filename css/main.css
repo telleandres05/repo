@@ -82,6 +82,8 @@ footer {
     gap: 20px;
     margin: 10px auto;
     background-color: #f4a710;
+    width: 100vh;
+    justify-content: center;
   }
   header nav div div ul li {
     font-size: 1.5rem;
